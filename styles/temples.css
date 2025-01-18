@@ -1,0 +1,101 @@
+header, footer {
+    background-color: #F5F5DC;
+    color: #800000;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0  auto;
+    padding: 10px;
+    position: relative;
+}
+
+main {
+    text-align: center;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+div{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+figure {
+    position: relative;
+    display: grid;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #800000;
+    background-color: #F5F5DC;
+    text-align: center;
+}
+
+
+footer {
+    text-align: center;
+}
+
+.active::before {
+    content: "🎈";
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+    cursor: pointer;
+ 	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	list-style: none;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+    color: #800000;
+    text-decoration: none;
+    font-size: larger;
+}
+.navigation a:hover {
+	font-weight: 700;
+    text-decoration: underline;
+    color: #FFDAB9;
+}
+
+.open a {
+	display: block;
+}
