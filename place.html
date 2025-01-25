@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Kyoto</title>
+    <meta name="description" content="">
+    <meta name="author" content="Johnathan Larson">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Kyoto Japan</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/kyoto-sakura.webp" media="(min-width: 37.5em)">
+            <img src="images/kyoto-palace.webp" alt="A pictura of one of the Palaces in Kyoto Japan">
+        </picture>
+        <section id="data">
+            <h2>Data</h2>
+            <label>Area:</label>
+            <p>827.9 sq km</p>
+            <label>Populataion:</label>
+            <p>1.46 million</p>
+            <label>Languages:</label>
+            <p>Japanese</p>
+            <label>Currency:</label>
+            <p>Yen</p>
+            <label>Time Zone:</label>
+            <p>Japan (GMT+9)</p>
+            <label>Calling Code:</label>
+            <p>+81</p>
+        </section>
+        <section id="weather">
+            <h2 id="weatherhead">Weather</h2>
+            <img id="weatherIcon" src="images/sunny_temperature_icon.svg" alt="sunny weather icon">
+            <label>Temperature:</label>
+            <p id="temp">4</p>
+            <label>Condition:</label>
+            <p>Sunny</p>
+            <label>Wind:</label>
+            <p id="wind">7</p>
+            <label>Wind Chill:</label>
+            <p id="windChill"></p>
+        </section>
+    </main>
+    <footer>
+        <p>©️<span id="currentyear"></span> 🎮 Johnathan Larson 🎮 Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
