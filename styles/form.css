@@ -57,7 +57,6 @@ textarea {
 
 .checkboxGroup{
     display: flex;
-    align-items: left;
     gap: 10px;
     padding-left: 1.5rem;
 }
