@@ -1,3 +1,7 @@
+* {
+    font-family: 'Cabin', sans-serif;
+}
+
 header, footer {
     background-color: #F5F5DC;
     color: #800000;
