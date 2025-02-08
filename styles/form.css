@@ -1,0 +1,73 @@
+header, footer {
+    background-color: #F5F5DC;
+    color: #800000;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    margin: auto 0;
+    padding: 1rem;
+    justify-content: center;
+    gap: 1rem;
+}
+
+input[type='text'], input[type='textarea'], input[type='date'],select {
+    width: 80%;
+    max-width: 500px;
+    margin-left: 1.5rem;
+}
+
+input[type='submit']{
+    width: 95%;
+    max-width: 600px;
+    font-size: large;
+    font-weight: bold;
+}
+
+input[type='textarea'] {
+    height: 100px;
+}
+
+#radioButtons {
+    display: flex;
+    gap: 1rem;
+    padding-left: 1.5rem;
+}
+
+#counterContainer {
+    display: flex;
+    margin: 0 auto;
+    background-color: #F5F5DC;
+    color: #800000;
+    font-size: larger;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 80%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.checkboxGroup{
+    display: flex;
+    align-items: left;
+    gap: 10px;
+    padding-left: 1.5rem;
+}
+
+.radioGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.required::before{
+    content: '*';
+    color: red;
+}

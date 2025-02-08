@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Product review</title>
+    <meta name="Description" content="A form submission page nuilt for WDD131 by Johnathan Larson">
+    <meta name="author" content="Johnathan Larson">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <label for="productName" class="required">Product Name:</label>
+            <select id="productName" name="productName" required>
+                <option disabled selected>Select a Product...</option>
+            </select>
+
+            <p class="required">Overall Rating:</p>
+            <div id="radioButtons">
+                <div class="radioGroup">
+                    <input type="radio" id="1star" name="rating" value="1" required>
+                    <label for="1star">⭐</label>
+                </div>
+                <div class="radioGroup">
+                    <input type="radio" id="2star" name="rating" value="2">
+                    <label for="2star">⭐⭐</label>
+                </div>
+                <div class="radioGroup">
+                    <input type="radio" id="3star" name="rating" value="3">
+                    <label for="3star">⭐⭐⭐</label>
+                </div>
+                <div class="radioGroup">
+                    <input type="radio" id="4star" name="rating" value="4">
+                    <label for="4star">⭐⭐⭐⭐</label>
+                </div>
+                <div class="radioGroup">
+                    <input type="radio" id="5star" name="rating" value="5">
+                    <label for="5star">⭐⭐⭐⭐⭐</label>
+                </div>
+            </div>
+
+            <label for="installDate" class="required">Date of Installation: </label>
+            <input type="date" id="installDate" name="installDate" required>
+
+            <p>Useful Features: <br>(Check all that apply)</p>
+            <div class="checkboxGroup">
+                <input type="checkbox" id="durability" name="features" value="durability">
+                <label for="durability">Durability</label>
+            </div>
+            <div class="checkboxGroup">
+                <input type="checkbox" id="easeOfUse" name="features" value="easeOfUse">
+                <label for="easeOfUse">Ease of Use</label>
+            </div>
+            <div class="checkboxGroup">
+                <input type="checkbox" id="performance" name="features" value="performance">
+                <label for="performance">Performance</label>
+            </div>
+            <div class="checkboxGroup">
+                <input type="checkbox" id="design" name="features" value="design">
+                <label for="design">Design</label>
+            </div>
+
+            <label for="writtenReview">Written Review:</label>
+            <input type="textarea" id="writtenReview" name="writtenReview">
+
+            <label for="userName">User Name:</label>
+            <input type="text" id="userName" name="userName">
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>©️<span id="currentyear"></span> 🎮 Johnathan Larson 🎮 Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
